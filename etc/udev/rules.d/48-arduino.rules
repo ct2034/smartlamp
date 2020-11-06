@@ -1,0 +1,4 @@
+SUBSYSTEM!="usb_device", ACTION!="add", GOTO="arduino_end"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="660", SYMLINK+="arduino%n"
+LABEL="arduino_end"
+
